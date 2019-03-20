@@ -1,0 +1,629 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 100%;
+  font-family: 'Oswald', sans-serif;
+}
+
+a{
+	text-decoration: none;
+}
+
+.hidden{
+	display: none;
+}
+
+/* 
+==============================================
+				  Navigation 
+==============================================
+*/
+.nav{
+	font-size: 12px;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	position: fixed;
+	width: 100%;
+	padding-bottom: 6px;
+	z-index: +6;
+}
+
+.menu img{
+	width: 36px;
+	height: 36px;
+	margin-top: -4px;
+}
+
+.margintop{
+	text-align: center;
+	color: #cacacc;
+	margin-top: 4px;
+}
+
+.margintop a{
+	color:#cacacc;
+}
+
+ /* Icon Styles */
+ .icon-view {
+	display: flex;
+	justify-content: space-between;
+	color: grey;
+  }
+ 
+  /* Menu Panel Styles */
+  .menu-panel{
+	position: fixed;
+	display: block;
+	width: 100%;
+	top: -20rem;
+	left: 0;
+	padding: 2rem 0;
+	background-color: rgba(0, 0, 0, 0.603);
+	z-index: 5;
+  }
+ 
+  /*  Menu Panel Option Styles */
+  .mobile-links{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: flex-end;
+  }
+ 
+.mobile-link{
+	padding: 0.5rem 0;
+	align-self: center;
+}
+ 
+.mobile-link a,
+.mobile-link a:link,
+.mobile-link a:visited,
+.mobile-link a:hover,
+.mobile-link a:active{
+	color: orange;
+	text-decoration: none;
+}
+
+
+/* 
+==============================================
+					Header 
+==============================================
+*/
+
+nav{
+	background-color: #b92e34;
+}
+
+header{
+	padding-top: 90px;
+	background: url(../img/trianglify.svg) no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.pictureofme{
+	display: flex;
+	justify-content: center;
+}
+
+.pictureofme img{
+	border-radius: 50%;
+}
+
+.aligncenter{
+	text-align: center;
+}
+
+/* Weird looking pink which idk yet Line */
+
+.redline{
+	background-color: #fb6470;
+	height: 1px;
+	width: 60px;
+}
+
+.redlineflex{
+	display: flex;
+	justify-content: center;
+}
+
+.redlinemargin{
+	margin-top: 25px;
+}
+
+.redlinebottommargin{
+	margin-bottom: 35px;
+}
+
+/* Name */
+
+.name{
+	font-size: 48px;
+	color: #ffffff;
+}
+
+/* Job */
+
+.job{
+	font-size: 18px;
+	color: #77777d;
+	margin-bottom: 30px;
+}
+
+/* The two buttons that say new projects and awards*/
+
+.NewProject{
+	height: 50px;
+	width: 260px;
+	color: #ffffff;
+	background-color: #fb6470;
+	font-size: 1.2rem; 
+	border-radius: 6px;
+	align-items: center;
+	margin-top: 20px;
+	border: none;
+}
+
+.Award{
+	height: 50px;
+	width: 260px;
+	color: #ffffff;
+	background-color: #32bec7;  
+	font-size: 1.2rem; 
+	border-radius: 6px;
+	margin-top: 20px;
+	margin-left: 2px;
+	border: none;
+}
+
+.projectsandawards{
+	color: #ffffff;
+	text-align: center;
+}
+
+/* Gulp and netlify stuff that goes under the buttons */
+
+.netlify{
+	text-align: center;
+	margin-top: 20px;
+	color: white;
+	padding-bottom: 20px;
+}
+
+.netlify img{
+	width: 30px;
+	height: 50px;
+}
+
+/* 
+==============================================
+					 Main 
+==============================================
+*/
+
+/* 
+==============================================
+				    Skills
+==============================================
+*/
+
+.Skills{
+	background-color: #003366;
+}
+
+.FlexSummary{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.SkillsTitle{
+	padding-top: 60px;
+	font-size: 32px;
+	margin-bottom: 4px;
+	text-align: center;
+	color:#ffffffb6;
+}
+
+.skillsmargin{
+	margin-bottom: 36px;
+	padding: 20px;
+}
+
+/* 
+==============================================
+			 Contact Information
+==============================================
+*/
+
+.Contacts{
+	background: linear-gradient( rgba(0, 0, 0, 0.603), rgba(139, 0, 0, 0.281)), url(../img/smallviewport.svg) no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.ContactTitle{
+	padding-top: 60px;
+	font-size: 32px;
+	text-align: center;
+	margin-bottom: 4px;
+	color: #ffffffb6;
+}
+
+.MyContacts{
+	text-align: center;
+	margin-bottom: 20px;
+	color: #ffffffb6;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.SocialMediaPlatform{
+	text-align: center;
+}
+
+.ContactInformation{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	color: #ffffffb6;
+}
+
+.Contact{
+	padding: 40px;
+}
+
+.Contact img:hover{
+	opacity: 0.5;
+	filter: alpha(opacity=20); 
+}
+
+/* 
+==============================================
+				Work Experience
+==============================================
+*/
+
+.MyExperience{
+	padding-bottom: 40px;
+	background-color: #003366;
+}
+
+.speechbubblealign{
+	display: flex;
+	justify-content: flex-start;
+	margin: 20px;
+}
+
+.speech-bubble{
+	position: relative;
+	background: #7ac943;
+	border-radius: 2em;
+	padding: 20px;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	max-width: 500px;
+	
+}
+
+.speech-bubble:after{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 0.625em solid transparent;
+	border-left-color: #7ac943;
+	border-right: 0;
+	border-bottom: 0;
+	margin-top: -0.312em;
+	margin-right: -0.625em;
+}
+
+.speech-bubble li{
+	margin-top: 4px;
+}
+
+.secondspeechbubblealign{
+	display: flex;
+	justify-content: flex-end;
+	margin: 20px;
+	margin-bottom: 0px;
+}
+
+.secondspeechbubble{
+	position: relative;
+	background: #00aabb;
+	border-radius: 2em;
+	padding: 20px;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	max-width: 500px;
+}
+
+.secondspeechbubble:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 0.625em solid transparent;
+	border-right-color: #00aabb;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -0.312em;
+	margin-left: -0.625em;
+}
+
+.secondspeechbubble li{
+	margin-top: 4px;
+}
+
+/* 
+==============================================
+				  Education
+==============================================
+*/
+
+.Schooling{
+	background: linear-gradient( rgba(0, 0, 0, 0.795), rgba(139, 0, 0, 0.281)), url(../img/smallviewport.svg) no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	padding-top: 30px;
+}
+
+.Education{
+	padding-top: 4px;
+	padding-bottom: 16px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.EducationTitle{
+	padding-top: 26px;
+	font-size: 3rem;
+	margin-bottom: 4px;
+	text-align: center;
+	color: #ffffffb6;
+}
+
+.AboutMyself{
+	text-align: center;
+	margin-bottom: 50px;
+	color: #ffffffb6;
+}
+
+.Nait{
+	max-width: 440px;
+	max-height: 200px;
+	background-color: rgba(128, 128, 128, 0.432);
+	border-radius: 8px;
+	margin-bottom: 36px;
+}
+
+.Highschoolright{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.Naitpadding{
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+.Highschool{
+	max-width: 440px;
+	max-height: 200px;
+	background-color: rgba(128, 128, 128, 0.432);
+	border-radius: 8px;
+	margin-bottom: 36px;
+}
+
+.Highschoolpadding{
+	padding: 18px;
+}
+
+/*  What goes within the boxs themselves  */
+
+.DiplomaName{
+	color: #ffffff;
+	font-size: 24px;
+}
+
+.DatesAtteneded{
+	color: #a54d59;
+	font-size: 20px;
+	margin-bottom: 6px;
+}
+
+.websitelink a{
+	color: #ffffffb6;
+	font-size: 0.9rem;
+	margin-bottom: 6px;
+}
+
+.detailsofmyself{
+	color: #ffffffb6;
+	margin-top: 4px;
+}
+
+/* 
+==============================================
+					Footer 
+==============================================
+*/
+
+.content{
+	padding-top: 10px;
+	background: linear-gradient( rgba(0, 0, 0, 0.795), rgba(139, 0, 0, 0.582));
+	padding-bottom: 20px;
+}
+
+h4{
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: 400;
+	color: #ffffffb6;
+}
+
+/* Get In Touch Form */
+
+.GetInTouch{
+	max-width: 440px;
+	margin: 0 auto;
+}
+
+.margin-form{
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0.6rem;
+}
+
+input[type="text"]{
+	margin-top: 6px;
+	border: 1px solid black;
+	border-radius: 6px;
+	width: 440px;
+	height: 50px;
+}
+
+input[type="email"]{
+	margin-top: 6px;
+	border: 1px solid black;
+	border-radius: 6px;
+	width: 440px;
+	height: 50px;
+}
+
+.button{
+	border: none;
+	border-radius: 4px;
+	width: 300px;
+	height: 50px;
+	background-color: #fb6470;
+	color: #ffffff;
+}
+
+.centerbutton{
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+}
+
+label{
+	margin-left: 20px;
+	color: #ffffffb6;
+}
+
+.copyright{	
+	margin-top: 5rem;
+	text-align: center;
+	font-size: 13px;
+}
+
+.margin-copyright{
+	margin-top: 8px;
+}
+
+.gray a{
+	color: #241d1d;
+}
+
+/* 
+==============================================
+				Media Stuff
+==============================================
+*/
+
+/* This is for everything that needs to be aligned when decreasing and increasing the size of the viewport */
+
+@media(min-width: 480px){
+	.AboutMyself{
+		padding-left: 20px;
+		padding-right: 20px;
+		text-align: center;
+	}
+
+	.projectsandawards{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.Award{
+		margin-left: 0px;
+	}
+}
+
+@media(min-width: 780px){
+	.ContactTitle{
+		padding-left: 150px;
+		padding-right: 150px;
+	}
+
+	.Award{
+		margin-left: 20px;
+	}
+
+	.projectsandawards{
+		display: flex;
+		flex-flow: wrap;
+		justify-content: center;
+	}
+
+	.Award{
+		margin-left: 20px;
+	}
+}	
+
+@media(min-width: 1000px){
+	.MyContacts{
+		padding-left: 150px;
+		padding-right: 150px;
+	}
+
+	.Schooling{
+		background: linear-gradient( rgba(0, 0, 0, 0.795), rgba(139, 0, 0, 0.281)), url(../img/BlackWolf.webp) no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+
+	.Contacts{
+		background: linear-gradient( rgba(0, 0, 0, 0.603), rgba(139, 0, 0, 0.281)), url(../img/BlackWolf.webp) no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+
+	.ContactTitle{
+		padding-left: 250px;
+		padding-right: 250px;
+	}
+}
+
+@media(min-width: 1600px){
+	.MyContacts{
+		padding-left: 450px;
+		padding-right: 450px;
+	}
+
+	.ContactTitle{
+		padding-left: 450px;
+		padding-right: 450px;
+	}
+}
