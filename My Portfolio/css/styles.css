@@ -414,6 +414,14 @@ header{
 	margin-bottom: 36px;
 }
 
+.CardinalCollins{
+	max-width: 440px;
+	max-height: 240px;
+	background-color: rgba(128, 128, 128, 0.432);
+	border-radius: 8px;
+	margin-bottom: 36px;
+}
+
 .Highschoolright{
 	display: flex;
 	justify-content: flex-start;
@@ -427,7 +435,7 @@ header{
 }
 
 .Highschool{
-	max-width: 440px;
+	width: 440px;
 	max-height: 200px;
 	background-color: rgba(128, 128, 128, 0.432);
 	border-radius: 8px;
@@ -435,7 +443,10 @@ header{
 }
 
 .Highschoolpadding{
-	padding: 18px;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
 }
 
 /*  What goes within the boxs themselves  */
