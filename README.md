@@ -1,4 +1,5 @@
 # Portfolio
 This is my portfolio
-This is just a sample of it, i have a website avaliable but it is not up to date
+I have not added any database related to my github, i can if it is required.
+I have a website available instead to show you what these files outcome
 https://walterteljega.netlify.app/
