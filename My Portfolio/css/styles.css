@@ -5,6 +5,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   font-size: 100%;
+  width: 100%;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -435,7 +436,7 @@ header{
 }
 
 .Highschool{
-	width: 440px;
+	max-width: 440px;
 	max-height: 200px;
 	background-color: rgba(128, 128, 128, 0.432);
 	border-radius: 8px;
@@ -609,6 +610,13 @@ label{
 		padding-right: 150px;
 	}
 
+	.ContactTitle{
+		padding-left: 250px;
+		padding-right: 250px;
+	}
+}
+
+@media(min-width: 1250px){
 	.Schooling{
 		background: linear-gradient( rgba(0, 0, 0, 0.795), rgba(139, 0, 0, 0.281)), url(../img/BlackWolf.webp) no-repeat;
 		background-attachment: fixed;
@@ -619,11 +627,6 @@ label{
 		background: linear-gradient( rgba(0, 0, 0, 0.603), rgba(139, 0, 0, 0.281)), url(../img/BlackWolf.webp) no-repeat;
 		background-attachment: fixed;
 		background-size: cover;
-	}
-
-	.ContactTitle{
-		padding-left: 250px;
-		padding-right: 250px;
 	}
 }
 
