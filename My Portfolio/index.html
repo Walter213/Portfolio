@@ -37,7 +37,7 @@
         <h2 class="hidden">Walter Teljega</h2>
         <header>
             <div class="pictureofme">
-                <img src="img/MeNFriend.webp" alt="" width="140" height="140">
+                <img src="img/No_picture_available.png" alt="" width="140" height="140">
             </div>
             <div class="redlineflex redlinemargin">
                 <div class="redline"></div>
@@ -65,16 +65,44 @@
                 </p>
                 <div class="FlexSummary">
                     <div class="skillsmargin">
-                        <img src="img/commited-100.svg" alt="" width="250" height="250">
+                        <!-- <img src="img/commited-100.svg" alt="" width="250" height="250"> -->
+                        <div class="chart" data-percent="100">100%</div>
+                        <h2>Commited</h2>
                     </div>
                     <div class="skillsmargin">
-                        <img src="img/design-90.svg" alt="" width="250" height="250">
+                        <!-- <img src="img/design-90.svg" alt="" width="250" height="250"> -->
+                        <div class="chart" data-percent="95">95%</div>
+                        <h2>Team Work</h2>
                     </div>
                     <div class="skillsmargin">
-                        <img src="img/code-85.svg" alt="" width="250" height="250">
+                        <!-- <img src="img/code-85.svg" alt="" width="250" height="250"> -->
+                        <div class="chart" data-percent="95">95%</div>
+                        <h2>HTML</h2>
                     </div>
                     <div class="skillsmargin">
-                        <img src="img/teamwork-84.svg" alt="" width="250" height="250">
+                        <!-- <img src="img/teamwork-84.svg" alt="" width="250" height="250"> -->
+                        <div class="chart" data-percent="95">95%</div>
+                        <h2>CSS</h2>
+                    </div>
+                    <div class="skillsmargin">
+                        <div class="chart" data-percent="90">90%</div>
+                        <h2>ASP.Net/C#</h2>
+                    </div>
+                    <div class="skillsmargin">
+                        <div class="chart" data-percent="85">85%</div>
+                        <h2>Android Dev</h2>
+                    </div>
+                    <div class="skillsmargin">
+                        <div class="chart" data-percent="80">80%</div>
+                        <h2>Database</h2>
+                    </div>
+                    <div class="skillsmargin">
+                        <div class="chart" data-percent="75">75%</div>
+                        <h2>IOS Dev</h2>
+                    </div>
+                    <div class="skillsmargin">
+                        <div class="chart" data-percent="75">75%</div>
+                        <h2>JavaScript</h2>
                     </div>
                 </div>
             </div>
@@ -173,7 +201,7 @@
                         <p>FEB 2015 - APRIL 2015 & FEB 2016 - MARCH 2016</p>
                     </li>
                     <li>
-                        <p>•	I was focused on organizing food, and making hampers by adding perishable and non- perishable items to the kit. The volume of hampers needed to be recorded and hampers needed to be accurately labelled for delivery to the clients or food depot.  
+                        <p>I was focused on organizing food, and making hampers by adding perishable and non- perishable items to the kit. The volume of hampers needed to be recorded and hampers needed to be accurately labelled for delivery to the clients or food depot.  
                         </p>
                     </li>
                 </ul>
@@ -214,10 +242,11 @@
         </section>
       </main>
       <section id="contact" class="content">
-          <h4>Get In Touch (Sample of form, does not send email)</h4>
+          <h4>Get In Touch</h4>
           <div class="redlineflex">
               <div class="redline"></div>
           </div>
+          <h4>Sample Form</h4>
           <form id="GetInTouch" class="GetInTouch">
               <div class="margin-form">
                   <label for="Name">Name*</label>
@@ -252,6 +281,23 @@
     <script async src="js/libs/gsap/TweenMax.min.js"></script>
     <script async src="js/libs/gsap/plugins/ScrollToPlugin.min.js"></script>
     <script async src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/jquery.easypiechart.min.js"></script>
+    <script>
+    $(function() {
+        $('.chart').easyPieChart({
+            easing: 'easeOutElastic',
+				delay: 10000,
+				barColor: '#369670',
+				trackColor: '#fff',
+				scaleColor: false,
+				lineWidth: 14,
+				trackWidth: 14,
+                size: 130,
+				lineCap: 'round',
+        });
+    });
+    </script>
 </body>
 
 </html>

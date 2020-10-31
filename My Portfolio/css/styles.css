@@ -124,7 +124,7 @@ header{
 	text-align: center;
 }
 
-/* Weird looking pink which idk yet Line */
+/* pink line */
 
 .redline{
 	background-color: #fb6470;
@@ -238,6 +238,30 @@ header{
 .skillsmargin{
 	margin-bottom: 36px;
 	padding: 20px;
+}
+
+/* Organizing/Aligning the animated charts */
+
+.chart{
+	position: relative;
+	width: 130px;
+	height: 130px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 28px;
+	line-height: 130px;
+}
+
+canvas{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.skillsmargin h2{
+	text-align: center;
+	margin-top: 4px;
+	font-size: 24px;
 }
 
 /* 
