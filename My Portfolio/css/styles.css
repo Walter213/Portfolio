@@ -250,6 +250,7 @@ header{
 	text-align: center;
 	font-size: 28px;
 	line-height: 130px;
+	color: #ffffff;
 }
 
 canvas{
@@ -262,6 +263,7 @@ canvas{
 	text-align: center;
 	margin-top: 4px;
 	font-size: 24px;
+	color: #ffffff;
 }
 
 /* 
@@ -506,9 +508,9 @@ canvas{
 */
 
 .content{
-	padding-top: 10px;
+	/* padding-top: 10px; */
 	background: linear-gradient( rgba(0, 0, 0, 0.795), rgba(139, 0, 0, 0.582));
-	padding-bottom: 20px;
+	/* padding-bottom: 20px; */
 }
 
 h4{
@@ -578,7 +580,7 @@ label{
 }
 
 .copyright{	
-	margin-top: 5rem;
+	/* margin-top: 5rem; */
 	text-align: center;
 	font-size: 13px;
 }
