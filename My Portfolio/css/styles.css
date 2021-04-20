@@ -606,27 +606,24 @@ label{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-.projectcard{
 	padding-top: 90px;
-	padding-bottom: 30px;
 }
 
-.projectPosted {
+.projectcardNHL{
+	background: url(../img/NHLStandingsProject.JPG) no-repeat;
+	background-size: cover;
+	width: 800px; 
+	height: 300px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
     border: 1px solid black;
-	max-width: 1000px;
-	max-height: 400px;
     opacity: 80%;
+	margin: 0 15px 30px 15px;
 }
 
-.projectPosted:hover{
-    border: 3px solid red;
-    background-color: green;
-	opacity: 100%;
+.projectcardNHL:hover{
+    border: 3px solid orange;
 }
 
 /* 
