@@ -626,7 +626,7 @@ label{
 
 .displayed-image{
 	display: block;
-	width: 1000px;
+	max-width: 1000px;
 }
 
 .project-content{
@@ -665,6 +665,57 @@ label{
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+}
+
+/* Project Section Image Adjustment (Media)*/
+
+@media(max-width: 1015px){
+	.displayed-image{
+		max-width: 750px;
+	}
+	
+	.project-online-link{
+		width: 40px;
+		height: 40px;
+	}
+
+	.project-github{
+		width: 40px;
+		height: 40px;
+	}
+}
+
+@media(max-width: 780px){
+	.displayed-image{
+		max-width: 470px;
+	}
+
+	.project-name{
+		font-size: 16px;
+		margin-bottom: 4px;
+	}
+	
+	.project-description{
+		font-size: 12px;
+	}
+	
+	.project-links{
+		margin-top: 35px;
+		width: 200px;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.project-online-link{
+		width: 30px;
+		height: 30px;
+	}
+
+	.project-github{
+		width: 30px;
+		height: 30px;
+	}
 }
 
 /* 
