@@ -617,11 +617,13 @@ label{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 	padding-bottom: 30px;
 }
 
-.projectcardNHL{
+.projectcardNHL, .projectcardRPS , .projectcardSteamNScore{
 	position: relative;
+	margin-bottom: 30px;
 }
 
 .displayed-image{
@@ -665,6 +667,14 @@ label{
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+}
+
+.MoreProjects{
+	font-size: 72px;
+	color: #ffffff;
+	margin: 20px;
+	text-align: center;
+	width: 1000px;
 }
 
 /* Project Section Image Adjustment (Media)*/
