@@ -728,6 +728,39 @@ label{
 	}
 }
 
+@media(max-width: 480px){
+	.displayed-image{
+		max-width: 350px;
+	}
+
+	.project-name{
+		font-size: 16px;
+		margin-bottom: 4px;
+	}
+	
+	.project-description{
+		font-size: 12px;
+	}
+	
+	.project-links{
+		margin-top: 35px;
+		width: 200px;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.project-online-link{
+		width: 20px;
+		height: 20px;
+	}
+
+	.project-github{
+		width: 20px;
+		height: 20px;
+	}
+}
+
 /* 
 ==============================================
 				Media Stuff
