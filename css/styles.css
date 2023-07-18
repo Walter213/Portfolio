@@ -179,7 +179,7 @@ header{
 	color: #ffffff;
 }
 
-.Award{
+.CVResume{
 	height: 50px;
 	width: 260px;
 	color: #ffffff;
@@ -189,6 +189,11 @@ header{
 	margin-top: 20px;
 	margin-left: 2px;
 	border: none;
+}
+
+.CVResume a{
+	text-decoration: none;
+	color: #ffffff;
 }
 
 .projectsandawards{
@@ -782,7 +787,7 @@ label{
 		align-items: center;
 	}
 
-	.Award{
+	.CVResume{
 		margin-left: 0px;
 	}
 }
@@ -793,7 +798,7 @@ label{
 		padding-right: 150px;
 	}
 
-	.Award{
+	.CVResume{
 		margin-left: 20px;
 	}
 
@@ -803,7 +808,7 @@ label{
 		justify-content: center;
 	}
 
-	.Award{
+	.CVResume{
 		margin-left: 20px;
 	}
 }	
