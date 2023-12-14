@@ -626,7 +626,7 @@ label{
 	padding-bottom: 30px;
 }
 
-.projectcardNHL, .projectcardRPS , .projectcardSteamNScore{
+.projectcardNHL, .projectcardRPS , .projectcardSteamNScore, .projectcardFlutterPeopleInfo{
 	position: relative;
 	margin-bottom: 30px;
 }
