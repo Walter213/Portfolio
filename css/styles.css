@@ -235,6 +235,7 @@ header{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	flex-direction: column;
 }
 
 .SkillsTitle{
@@ -247,12 +248,47 @@ header{
 
 .skillsmargin{
 	margin-bottom: 36px;
-	padding: 20px;
+}
+
+.KeyList{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.SoftwareList{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.OtherList{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.ListItem{
+	background-image: url(/img/Wires.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 200px;
+	height: 100px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	border-radius: 1em;
 }
 
 /* Organizing/Aligning the animated charts */
 
-.chart{
+/* .chart{
 	position: relative;
 	width: 130px;
 	height: 130px;
@@ -274,7 +310,7 @@ canvas{
 	margin-top: 4px;
 	font-size: 24px;
 	color: #ffffff;
-}
+} */
 
 /* 
 ==============================================
