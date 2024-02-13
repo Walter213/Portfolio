@@ -24,6 +24,9 @@ a{
 ==============================================
 */
 .nav{
+	background-color: #b92e34;
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
 	font-size: 12px;
 	display: flex;
 	justify-content: space-between;
@@ -34,6 +37,7 @@ a{
 	width: 100%;
 	padding-bottom: 6px;
 	z-index: +6;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .menu img{
@@ -100,10 +104,6 @@ a{
 ==============================================
 */
 
-nav{
-	background-color: #b92e34;
-}
-
 header{
 	padding-top: 90px;
 	background: url(../img/trianglify.svg) no-repeat;
@@ -160,7 +160,7 @@ header{
 	margin-bottom: 30px;
 }
 
-/* The two buttons that say new projects and awards*/
+/* The two buttons that say Projects and CV / Resume */
 
 .NewProject{
 	height: 50px;
@@ -276,14 +276,16 @@ header{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	width: 200px;
+	width: 220px;
 	height: 100px;
 	color: white;
+	font-weight: 600;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 10px;
 	border-radius: 1em;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 /* Organizing/Aligning the animated charts */
