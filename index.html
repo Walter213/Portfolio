@@ -16,15 +16,24 @@
     <h1 class="hidden">Walter's Portfolio</h1>
     <nav class="nav">
         <h2 class="hidden">NavigationBar</h2>
-        <div id="mobile-menu-button" class="menu"><img src="img/bars-solid.svg" alt=""></div>
-        <div class="margintop">
-            <p><a href="mailto:walterteljega15@gmail.com">Walterteljega15@gmail.com</a></p>
-            <p><a href="tel:7808500854">780-850-0854</a></p>
-        </div>
-    </nav>
-    <aside id="menu-panel" class="menu-panel">
-        <h2 class="hidden">Navigation</h2>
+        <!-- <div id="mobile-menu-button" class="menu"><img src="img/bars-solid.svg" alt=""></div> -->
+        <ul class="mobile-links-small-view">
+            <li id="mobile-menu-button" onclick="hidebar()" class="menu menu-small"><a href="#"><img src="img/x-solid.svg" alt=""></a></li>
+            <li class="mobile-link-small"><a href="#summary">Skills Summary</a> </li>
+            <li class="mobile-link-small"><a href="#find-me">Find Me</a> </li>
+            <li class="mobile-link-small"><a href="#work">Work Experience</a> </li>
+            <li class="mobile-link-small"><a href="#education">Education</a> </li>
+            <li class="mobile-link-small"><a href="#contact">Contact</a> </li>
+            <li class="mobile-link-small"><a href="projects showcase/projectsshowcase.html">Projects</a> </li>
+            <li class="mobile-link-small"><a href="#topofpage">back to top</a> </li>
+        </ul>
         <ul class="mobile-links">
+            <li>
+                <div class="margintop">
+                    <p><a href="mailto:walterteljega15@gmail.com">Walterteljega15@gmail.com</a></p>
+                    <p><a href="tel:7808500854">780-850-0854</a></p>
+                </div>
+            </li>
             <li class="mobile-link"><a href="#summary">Skills Summary</a> </li>
             <li class="mobile-link"><a href="#find-me">Find Me</a> </li>
             <li class="mobile-link"><a href="#work">Work Experience</a> </li>
@@ -32,8 +41,9 @@
             <li class="mobile-link"><a href="#contact">Contact</a> </li>
             <li class="mobile-link"><a href="projects showcase/projectsshowcase.html">Projects</a> </li>
             <li class="mobile-link"><a href="#topofpage">back to top</a> </li>
+            <li id="mobile-menu-button" onclick="showbar()" class="menu menu-big"><a href="#"><img src="img/bars-solid.svg" alt=""></a></li>
         </ul>
-    </aside>
+    </nav>
     <section id="topofpage">
         <h2 class="hidden">Walter Teljega</h2>
         <header>
@@ -279,21 +289,37 @@
     <script async src="js/index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="js/jquery.easypiechart.min.js"></script>
-    <!-- <script>
-    $(function() {
-        $('.chart').easyPieChart({
-            easing: 'easeOutElastic',
-				delay: 10000,
-				barColor: '#369670',
-				trackColor: '#fff',
-				scaleColor: false,
-				lineWidth: 14,
-				trackWidth: 14,
-                size: 130,
-				lineCap: 'round',
-        });
-    });
-    </script> -->
+    <script>
+    // $(function() {
+    //     $('.chart').easyPieChart({
+    //         easing: 'easeOutElastic',
+	// 			delay: 10000,
+	// 			barColor: '#369670',
+	// 			trackColor: '#fff',
+	// 			scaleColor: false,
+	// 			lineWidth: 14,
+	// 			trackWidth: 14,
+    //             size: 130,
+	// 			lineCap: 'round',
+    //     });
+    // });
+    function showbar(){
+        const sidebar = document.querySelector('.mobile-links-small-view')
+        sidebar.style.display = 'flex'
+    }
+    function hidebar(){
+        const sidebar = document.querySelector('.mobile-links-small-view')
+        sidebar.style.display = 'none'
+    }
+
+    function resizeMenu() {
+        if (window.innerWidth >= 850) {
+            const Menu = document.querySelector('.mobile-links-small-view')
+            Menu.style.display = 'none'
+        }
+    }
+    window.addEventListener('resize', resizeMenu)
+    </script>
 </body>
 
 </html>

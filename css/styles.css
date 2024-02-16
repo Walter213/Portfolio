@@ -37,7 +37,18 @@ a{
 	width: 100%;
 	padding-bottom: 6px;
 	z-index: +6;
-	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px;
+}
+
+.nav li{
+	height: 50px;
+}
+
+.nav a{
+	height: 100%;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
 }
 
 .menu img{
@@ -50,38 +61,49 @@ a{
 	text-align: center;
 	color: #cacacc;
 	margin-top: 4px;
+	margin-left: auto;
 }
 
 .margintop a{
 	color:#cacacc;
 }
 
- /* Icon Styles */
- .icon-view {
-	display: flex;
-	justify-content: space-between;
-	color: grey;
-  }
- 
-  /* Menu Panel Styles */
-  .menu-panel{
-	position: fixed;
-	display: block;
+.mobile-links{
 	width: 100%;
-	top: -20rem;
-	left: 0;
-	padding: 2rem 0;
-	background-color: rgba(0, 0, 0, 0.603);
-	z-index: 5;
-  }
- 
-  /*  Menu Panel Option Styles */
-  .mobile-links{
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-content: center;
-	justify-content: flex-end;
-  }
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.mobile-links li:first-child{
+	margin-right: auto;
+}
+
+.mobile-links-small-view{
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 250px;
+	z-index: 999;
+	background-color: rgba(255, 255, 255, 0.137);
+	backdrop-filter: blur(10px);
+	box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+	display: none;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.mobile-links-small-view li{
+	width: 100%;
+}
+
+.mobile-links-small-view a{
+	width: 100%;
+}
  
 .mobile-link{
 	padding: 0.5rem 0;
@@ -91,12 +113,37 @@ a{
 .mobile-link a,
 .mobile-link a:link,
 .mobile-link a:visited,
-.mobile-link a:hover,
 .mobile-link a:active{
-	color: orange;
 	text-decoration: none;
+	color: black;
+	background-color:  #b92e34;
+	font-weight: bold;
 }
 
+.mobile-link-small a,
+.mobile-link-small a:link,
+.mobile-link-small a:visited,
+.mobile-link-small a:active{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+.mobile-link a:hover{
+	color: white;
+}
+
+.mobile-link-small a:hover{
+	color: red;
+}
+
+.menu-big{
+	display: none;
+}
+
+.menu-small{
+	margin-top: 20px;
+}
 
 /* 
 ==============================================
@@ -272,7 +319,7 @@ header{
 }
 
 .ListItem{
-	background-image: url(/img/Wires.jpg);
+	background-image: url(/img/Wires.svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -812,6 +859,15 @@ label{
 
 /* This is for everything that needs to be aligned when decreasing and increasing the size of the viewport */
 
+@media(max-width: 480px){
+	.menu-big{
+		width: 100%;
+	}
+	.mobile-links-small-view{
+		width: 100%;
+	}
+}
+
 @media(min-width: 480px){
 	.AboutMyself{
 		padding-left: 20px;
@@ -849,7 +905,20 @@ label{
 	.CVResume{
 		margin-left: 20px;
 	}
+
+	.menu-big a{
+		justify-content: flex-end;
+	}
 }	
+
+@media(max-width: 850px){
+	.mobile-link{
+		display: none;
+	}
+	.menu-big{
+		display: block;
+	}
+}
 
 @media(min-width: 1000px){
 	.MyContacts{
