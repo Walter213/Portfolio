@@ -89,7 +89,7 @@ a{
 	width: 250px;
 	z-index: 999;
 	background-color: rgba(255, 255, 255, 0.137);
-	backdrop-filter: blur(10px);
+	backdrop-filter: blur(20px);
 	box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
 	display: none;
 	flex-direction: column;
@@ -99,6 +99,24 @@ a{
 
 .mobile-links-small-view li{
 	width: 100%;
+	border-bottom: 1px solid black;
+	border-radius: 4px;
+}
+
+.mobile-links-small-view li a:hover{
+	background-color: #77777d;
+	border-radius: 4px;
+}
+
+.mobile-links-small-view li:first-child{
+	border-bottom: none;
+	margin-bottom: 15px;
+	margin-left: 10px;
+	width: 50px;
+}
+
+.mobile-links-small-view li:first-child a:hover{
+	background-color: rgba(255, 255, 255, 0);
 }
 
 .mobile-links-small-view a{
@@ -134,7 +152,7 @@ a{
 }
 
 .mobile-link-small a:hover{
-	color: red;
+	color: black;
 }
 
 .menu-big{
@@ -319,7 +337,7 @@ header{
 }
 
 .ListItem{
-	background-image: url(/img/Wires.svg);
+	background-image: url(/img/Wires.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -332,7 +350,7 @@ header{
 	align-items: center;
 	margin: 10px;
 	border-radius: 1em;
-	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px
 }
 
 /* Organizing/Aligning the animated charts */
@@ -860,11 +878,12 @@ label{
 /* This is for everything that needs to be aligned when decreasing and increasing the size of the viewport */
 
 @media(max-width: 480px){
-	.menu-big{
-		width: 100%;
-	}
 	.mobile-links-small-view{
 		width: 100%;
+	}
+
+	.mobile-links ul:last-child{
+		margin-left: auto;
 	}
 }
 
