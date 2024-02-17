@@ -30,7 +30,7 @@ a{
 	font-size: 12px;
 	display: flex;
 	justify-content: space-between;
-	padding-top: 20px;
+	padding-top: 15px;
 	padding-left: 30px;
 	padding-right: 30px;
 	position: fixed;
@@ -707,6 +707,15 @@ label{
 }
 
 /* This is for the project showcase section cards */
+.return-to-Portfolio a{
+	text-decoration: none;
+	color: #241d1d;
+}
+
+.return-to-Portfolio a:hover{
+	color: white;
+}
+
 .project-header{
 	background: url(../img/trianglify.svg) no-repeat;
 	background-attachment: fixed;

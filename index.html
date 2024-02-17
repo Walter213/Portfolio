@@ -18,14 +18,14 @@
         <h2 class="hidden">NavigationBar</h2>
         <!-- <div id="mobile-menu-button" class="menu"><img src="img/bars-solid.svg" alt=""></div> -->
         <ul class="mobile-links-small-view">
-            <li id="mobile-menu-button" onclick="hidebar()" class="menu menu-small"><a href="#"><img src="img/x-solid.svg" alt=""></a></li>
-            <li class="mobile-link-small"><a href="#summary">Skills Summary</a> </li>
-            <li class="mobile-link-small"><a href="#find-me">Find Me</a> </li>
-            <li class="mobile-link-small"><a href="#work">Work Experience</a> </li>
-            <li class="mobile-link-small"><a href="#education">Education</a> </li>
-            <li class="mobile-link-small"><a href="#contact">Contact</a> </li>
-            <li class="mobile-link-small"><a href="projects showcase/projectsshowcase.html">Projects</a> </li>
-            <li class="mobile-link-small"><a href="#topofpage">back to top</a> </li>
+            <li id="mobile-menu-button" onclick="hidebar()" class="menu menu-small"><a href=""><img src="img/x-solid.svg" alt=""></a></li>
+            <li class="mobile-link-small" onclick="hidebar()"><a href="#summary">Skills Summary</a> </li>
+            <li class="mobile-link-small" onclick="hidebar()"><a href="#find-me">Find Me</a> </li>
+            <li class="mobile-link-small" onclick="hidebar()"><a href="#work">Work Experience</a> </li>
+            <li class="mobile-link-small" onclick="hidebar()"><a href="#education">Education</a> </li>
+            <li class="mobile-link-small" onclick="hidebar()"><a href="#contact">Contact</a> </li>
+            <li class="mobile-link-small" onclick="hidebar()"><a href="projects showcase/projectsshowcase.html">Projects</a> </li>
+            <li class="mobile-link-small" onclick="hidebar()"><a href="#topofpage">back to top</a> </li>
         </ul>
         <ul class="mobile-links">
             <li>
@@ -41,7 +41,7 @@
             <li class="mobile-link"><a href="#contact">Contact</a> </li>
             <li class="mobile-link"><a href="projects showcase/projectsshowcase.html">Projects</a> </li>
             <li class="mobile-link"><a href="#topofpage">back to top</a> </li>
-            <li id="mobile-menu-button" onclick="showbar()" class="menu menu-big"><a href="#"><img src="img/bars-solid.svg" alt=""></a></li>
+            <li id="mobile-menu-button" onclick="showbar()" class="menu menu-big"><a><img src="img/bars-solid.svg" alt=""></a></li>
         </ul>
     </nav>
     <section id="topofpage">
@@ -319,6 +319,9 @@
         }
     }
     window.addEventListener('resize', resizeMenu)
+
+    
+
     </script>
 </body>
 
