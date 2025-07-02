@@ -24,6 +24,7 @@ a{
 ==============================================
 */
 .nav{
+	font-family: 'Inter', Arial, Helvetica, sans-serif;
 	background-color: #b92e34;
 	border-bottom-left-radius: 1em;
 	border-bottom-right-radius: 1em;
@@ -188,7 +189,7 @@ header{
 	text-align: center;
 }
 
-/* pink line */
+/* red line */
 
 .redline{
 	background-color: #fb6470;
@@ -222,6 +223,16 @@ header{
 	font-size: 18px;
 	color: #77777d;
 	margin-bottom: 30px;
+}
+
+/* About Me Text */
+
+.Biography{
+	text-align: center;
+	margin-bottom: 20px;
+	color: #ffffffb6;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
 /* The two buttons that say Projects and CV / Resume */
@@ -291,8 +302,34 @@ header{
 ==============================================
 */
 
-.Skills{
+.Skills {
 	background-color: #003366;
+	color: #ffffff;
+	padding: 10px 10px;
+}
+
+.SkillsTitle {
+	font-size: 1.6rem;
+	text-align: center;
+	padding-bottom: 8px;
+	color: #ffffffb6;
+}
+
+.ListItem:hover {
+	transform: translateY(-5px);
+}
+
+.ListItem img{
+	width: 40px;
+	height: 40px;
+	margin-right: 8px;
+	object-fit: contain;
+}
+
+.ListItem span {
+	display: block;
+	color: #ffffff;
+	font-size: 1 rem;
 }
 
 .FlexSummary{
@@ -300,10 +337,11 @@ header{
 	flex-wrap: wrap;
 	justify-content: center;
 	flex-direction: column;
+	align-items: center;
 }
 
-.SkillsTitle{
-	padding-top: 60px;
+/* .SkillsTitle{
+	padding-top: 20px;
 	font-size: 32px;
 	margin-bottom: 4px;
 	text-align: center;
@@ -312,34 +350,19 @@ header{
 
 .skillsmargin{
 	margin-bottom: 36px;
-}
+} */
 
-.KeyList{
+.FrontEndList, .BackEndList{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: row;
 	flex-wrap: wrap;
-}
-
-.SoftwareList{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-}
-
-.OtherList{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+	margin: 10px;
 }
 
 .ListItem{
-	background-image: url(/img/Skillsimage.webp);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+	background-color: #00aabb;
 	width: 220px;
 	height: 100px;
 	color: white;
@@ -349,6 +372,7 @@ header{
 	align-items: center;
 	margin: 10px;
 	border-radius: 1em;
+	transition: transform 0.3s ease;
 	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px
 }
 
@@ -433,7 +457,7 @@ canvas{
 */
 
 .MyExperience{
-	padding-bottom: 40px;
+	padding: 20px 0 40px 0;
 	background-color: #003366;
 }
 
@@ -598,18 +622,18 @@ canvas{
 .DatesAtteneded{
 	color: #a54d59;
 	font-size: 20px;
+	margin-top: 6px;
 	margin-bottom: 6px;
 }
 
 .websitelink a{
 	color: #ffffffb6;
 	font-size: 0.9rem;
-	margin-bottom: 6px;
 }
 
 .detailsofmyself{
 	color: #ffffffb6;
-	margin-top: 4px;
+	margin-top: 20px;
 }
 
 /* 
@@ -621,7 +645,7 @@ canvas{
 .content{
 	/* padding-top: 10px; */
 	background: linear-gradient( rgba(0, 0, 0, 0.795), rgba(139, 0, 0, 0.582));
-	/* padding-bottom: 20px; */
+	padding-bottom: 10px;
 }
 
 h4{
@@ -947,7 +971,7 @@ label{
 }
 
 @media(min-width: 1000px){
-	.MyContacts{
+	.MyContacts .Biography{
 		padding-left: 150px;
 		padding-right: 150px;
 	}
@@ -973,7 +997,7 @@ label{
 }
 
 @media(min-width: 1600px){
-	.MyContacts{
+	.MyContacts .Biography{
 		padding-left: 450px;
 		padding-right: 450px;
 	}
